@@ -741,7 +741,7 @@ p {
   position: relative;
   display: block;
  
-  margin-bottom: 8px;
+  margin-bottom: 20px;
   border: 1px solid green;
 }
 .register-form-field:last-child {
@@ -750,9 +750,9 @@ p {
 .register-form-label {
   font-size: 12px;
   position: absolute;
-  top: 15%;
-  left: 41px;
-  transform: translateY(-150%);
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
   display: block;
   transition: transform var(--transition-duration);
   border: 1px solid red;
@@ -766,9 +766,23 @@ p {
   border-radius: 10px;
   transition: border-color var(--transition-duration);
 }
-.register-form-input:focus {
-  border-color: #2196f3;
+.register-form-input:focus + .register-form-icon
+ {
+  fill: #ff6c00;
 }
+
+/*.register-form-input:focus ~ .register-form-icon {
+  color: #2196f3;
+}
+.register-form-input:focus + .register-form-label
+ {
+  transform: translate( -45px, -170% ) scale(0.7);
+}
+.register-form-input:not(:placeholder-shown) ~ .register-form-icon
+
+
+
+/*.register-form-input:not(:placeholder-shown) + .register-form-label*/
 
 
 
@@ -778,7 +792,7 @@ p {
   left: 10px;
   transform: translateY(-50%);
 
-  transition: fill var();
+  transition: fill var(--transition-duration);
 }
 .register-form-btn {
   display: block;
