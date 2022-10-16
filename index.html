@@ -574,29 +574,35 @@
               rows="6"
               placeholder="Введіть текст"></textarea>
           </label>
-        </div>
-
+          </div>
+        
         <label class="register-form-agreement">
-          <svg class="register-form-icons" width="20" height="20">
-            <use class="icon-checked" href="./images/icon.svg#icon-check"></use>
-            <!--<use class="icon-unchecked" href="./images/icon.svg#unchecked"></use>-->
-           </svg>
           <input
+          class="register-form-checkbox visually-hidden"
+          type="checkbox"
+          name="user-agreement"/>
+           
+               <svg class="register-form-icons" width="20" height="20">
+               <use class="icon-checked" href="./images/icon.svg#icon-check"></use>
+              <use class="icon-unchecked" href="./images/icon.svg#unchecked"></use>
+              </svg>
+            <input
             class="register-form-checkbox visually-hidden"
             type="checkbox"
-            name="user-agreement"
-          />
-        <span class="register-form-desc">
+            name="user-agreement">
+               <span class="register-form-desc">
             Погоджуюся з розсилкою та приймаю 
             <a class="register-form-link" href="" target="_blank">Умови договору</a>
           </span>
         </label>
-
         <button class="register-form-btn" type="submit">Відправити</button>
         </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/header-scroll.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/aos-animate.js"></script>
  
   </body>
 </html>
