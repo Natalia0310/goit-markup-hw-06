@@ -57,7 +57,8 @@ ul {
   letter-spacing: 0.03em;
   color: #000000;
   text-decoration: none;
-
+  margin-top: 24px;
+  margin-bottom: 24px;
   margin-right: 93px;
 }
 .accent {
@@ -192,20 +193,21 @@ p {
 .button-primary {
   font-weight: 700;
   line-height: calc(30 / 16);
-  display: inline-block;
   letter-spacing: 00.06em;
   color: #ffffff;
   background-color: var(--accent-color);
   border-radius: 4px;
   border: 1px solid #2196f3;
   font-size: 16px;
-  text-align: center;
+  display: inline-flex;
+  justify-content: center;
   align-items: center;
-  padding-left: 32px;
-  padding-top: 10px;
-  padding-right: 32px;
-  padding-bottom: 10px;
+  text-align: center;
   cursor: pointer;
+}
+.button-primary:hover,
+.button-primary:focus {
+  background: #188CE8;
 }
 .section-title {
   font-weight: 700;
@@ -299,6 +301,7 @@ p {
 }
 
 .footer-logo {
+  display: block;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -306,12 +309,12 @@ p {
   letter-spacing: 0.03em;
   color: var(--fond-heder);
   text-decoration: none;
+  margin-bottom: 20px;
 }
 
 .list-footer {
   display: block;
   list-style: none;
-  margin-top: 20px;
 }
 .address-maps {
   font-family: 'Roboto';
