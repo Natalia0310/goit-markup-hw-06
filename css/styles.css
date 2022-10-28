@@ -204,6 +204,8 @@ p {
   align-items: center;
   text-align: center;
   cursor: pointer;
+  width: 216px;
+  height: 50px;
 }
 .button-primary:hover,
 .button-primary:focus {
